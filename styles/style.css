@@ -122,3 +122,49 @@ top blog style start
   color: #aeaeae;
   opacity: 0.25;
 }
+
+@media only screen and (max-width: 688px) {
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+  }
+  .player {
+    flex-direction: column;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    flex-direction: column;
+  }
+  .latest-courses {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player {
+    flex-direction: column;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    flex-direction: column;
+  }
+  .latest-courses {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
